@@ -6,11 +6,17 @@
 运行：使用java命令解释运行我们的字节码文件。格式：java 类名
 
 2.在一个java源文件可以声明多个class。但是，只能最多有一个类声明为public的。
+而且要求声明为public的类的类名必须与原文件名相同。
 
+3.程序的入口是main()方法。格式是固定的。
 
+4.输出语句：
+System.out.println()
+System.out.print():
 
+5.每一行执行语句都以";"结束。
 
-
+6.编译的过程:编译以后，会生成一个或多个字节码文件。字节码文件的文件名与java原文件中的类名相同。
 
 
 
@@ -18,17 +24,15 @@
 */
 
 
-
-
-
-
 class Hello{
-    public static void main(String[] args){
-        System.out.println("Hello World!");
+    public static void main(String[] a){//arguments:参数
+        System.out.print("Hello World!");
+        System.out.println();//换行
+        System.out.print("Hello World!");
     }
 }
 
-public class Person{
+class Person{
 
 }
 
